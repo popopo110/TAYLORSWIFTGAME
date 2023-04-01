@@ -1,4 +1,0 @@
-#library tkinter
-from tkinter import *
-import random
-
