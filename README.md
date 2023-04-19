@@ -1,7 +1,10 @@
 # Snatris game
 
 ##Goal
-There is no goal. The score just being there for visual puposes
+Let the snake eat as much as possible without having any collision. The higher the score the better
 
 #Control
-use the arrows up, down, left, and right to change direction. space for shooting blocks
+Use the arrows Up, Down, Right, Left to change the snake direction. 
+
+##Rule
+Each time the snake eat, the score increase 1. There is no limit to the score
