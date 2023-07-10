@@ -33,10 +33,6 @@ direction = "right"
 cube_x = random.randint(0, width - size)
 cube_y = -10
 
-# set up starting position and direction for asteroid
-asteroid_x = random.randint(0, width - size)
-asteroid_y = -50
-asteroid_vel = 5
 
 # create function to draw asteroid
 def draw_asteroid():
@@ -54,9 +50,8 @@ score = 0
 
 # set up timer for tetris cube and asteroid drops
 cube_timer_event = pygame.USEREVENT + 1
-asteroid_timer_event = pygame.USEREVENT + 2
 pygame.time.set_timer(cube_timer_event, 4000)
-pygame.time.set_timer(asteroid_timer_event, 40000)
+
 
 
 # create function to draw snake, tetris cube, and asteroid
@@ -93,9 +88,6 @@ while run:
         elif event.type == cube_timer_event:
             cube_x = random.randint(0, width - size)
             cube_y = -10
-        elif event.type == asteroid_timer_event:
-            asteroid_x = random.randint(0, width - size)
-            asteroid_y = -50
 
     # move snake
     if direction == "up":
