@@ -33,14 +33,6 @@ direction = "right"
 cube_x = random.randint(0, width - size)
 cube_y = -10
 
-
-# create function to draw asteroid
-def draw_asteroid():
-    pygame.draw.rect(window, black, [asteroid_x, asteroid_y, size, size])
-    pygame.draw.rect(window, black, [asteroid_x + size, asteroid_y + size, size, size])
-    pygame.draw.rect(window, black, [asteroid_x - size, asteroid_y + size, size, size])
-    pygame.draw.rect(window, black, [asteroid_x, asteroid_y + size*2, size, size])
-
 # set up snake body
 body = []
 body_length = 3
@@ -65,9 +57,6 @@ def draw_snake_cube_and_asteroid():
 
     # draw tetris cube
     pygame.draw.rect(window, red, [cube_x, cube_y, size, size])
-
-    # draw asteroid
-    draw_asteroid()
 
 # create game loop
 run = True
